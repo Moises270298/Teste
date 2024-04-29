@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Login</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+            /* Background image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* White background with transparency */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: fadeIn 1s ease;
+            /* Fade in animation */
+            transition: transform 0.3s ease-in-out;
+            /* Transition effect for transform */
+        }
+        
+        .login-container:hover {
+            transform: scale(1.05);
+            /* Scale up on hover */
+        }
+        
+        .login-header {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffd700;
+            /* Golden color */
+            text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 10px #0c0a01;
+            /* Shiny golden outline */
+            margin-bottom: 20px;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #1e90ff;
+            /* Blue submit button */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            /* Transition effect for background color and transform */
+        }
+        
+        .submit-btn:hover {
+            background-color: #007bff;
+            /* Darker blue on hover */
+            transform: rotate(5deg);
+            /* Rotate on hover */
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-header">Digite o usuario e senha</div>
+        <form action="#" method="POST">
+            <input type="text" name="username" placeholder="Usuário" class="form-input" required>
+            <input type="password" name="password" placeholder="Senha" class="form-input" required>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
